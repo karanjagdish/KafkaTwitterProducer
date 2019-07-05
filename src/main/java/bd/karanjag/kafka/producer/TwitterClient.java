@@ -16,13 +16,13 @@ import com.twitter.hbc.httpclient.auth.OAuth1;
 
 import bd.karanjag.kafka.config.TwitterConfiguration;
 
-public class KafkaTwitterProducer {
+public class TwitterClient {
 	
 	public Client client;
 	BlockingQueue<String> queue;
 	
 	
-	public KafkaTwitterProducer() {
+	public TwitterClient() {
 		
 		Authentication authen  = new OAuth1(
 				TwitterConfiguration.CONSUMER_KEY,
