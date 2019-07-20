@@ -22,14 +22,16 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 import bd.karanjag.kafka.config.KafkaConfiguration;
 import bd.karanjag.kafka.config.TwitterConfiguration;
+import bd.karanjag.kafka.producer.ProducerCallback;
 import twitter4j.Status;
 import twitter4j.TwitterException;
 import twitter4j.TwitterObjectFactory;
 
 public class TwitterClient {
 	
-	public Client client;
-	BlockingQueue<String> queue;
+	private Client client;
+	private BlockingQueue<String> queue;
+	private Callback callback;
 	
 	
 	public TwitterClient() {
@@ -64,7 +66,7 @@ public class TwitterClient {
 				  .endpoint(tracking)
 				  .processor(new StringDelimitedProcessor(queue));   
 		client = cb.build();
-		
+		callback = new ProducerCallback();
 	}
 	
 	private Producer<Long,String> getproducer(){
@@ -81,12 +83,13 @@ public class TwitterClient {
 		try(Producer<Long,String> prod = getproducer()){
 			while(true) {
 				Status status = TwitterObjectFactory.createStatus(queue.take()); //Using Twitter4J to parse the JSON string into a POJO
+				if(status.isRetweet())
+					System.out.println("Detected Retweet Tweet ID: "+status.getId());
 				System.out.println("@"+status.getUser().getName()+ ":"+status.getText()+"\n####################\n");
 				long key = status.getId();
 				String msg = status.toString();
 				ProducerRecord<Long, String> record = new ProducerRecord<Long, String>(KafkaConfiguration.TOPIC,key, msg);
-				prod.send(record);		//need to add callback
-				
+				prod.send(record,callback);		
 			}
 		}
 		catch(InterruptedException e) {
