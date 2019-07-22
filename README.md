@@ -4,7 +4,7 @@
 
 This program uses both the Hose Bird Stream API and the Twitter4J library.
 
-The [HBC API](https://github.com/twitter/hbc) was used to get real time tweets in the raw JSON and the [Twitter4J](http://twitter4j.org/en/) library was used to convert the JSON into java object used the Status class of the library.
+The [HBC API](https://github.com/twitter/hbc) was used to get real time tweets in the raw JSON and the [Twitter4J](http://twitter4j.org/en/) library was used to convert the JSON into java object due to the already present [Status class](http://twitter4j.org/javadoc/twitter4j/Status.html) of the library.
 
 **To Run this code** : You need your own Consumer and API keys which you can get by following [these steps](https://auth0.com/docs/connections/social/twitter)
 
