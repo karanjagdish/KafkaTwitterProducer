@@ -28,3 +28,7 @@ This project forms a good base for an ETL pipeline involving twitter streams.
 
 While running the code it was found that some status texts from the HBC client are incomplete and end with a link to the actual tweet instead displaying the entire tweets text. If anyone finds a solution please add it in the issues section.
 
+<h4>Credits</h4>
+
+All credits where it's due. In the initial stages github user dbsheta's [repo](https://github.com/dbsheta/kafka-twitter-producer) and [article](https://medium.com/dhoomil-sheta/processing-streaming-twitter-data-using-kafka-and-spark-part-1-setting-up-kafka-cluster-6e491809fa6d) was a great help! Please do check it out as well.
+
