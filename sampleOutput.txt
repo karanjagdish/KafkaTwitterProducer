@@ -1,0 +1,148 @@
+####################
+Produced Tweet
+@Shubham Chaplot:Sacrifice a few years of partying for decades of freedom.🤘😎 @ Chittorgarh Fort https://t.co/jeJ5Qk7fMj
+
+Tweet with offset 29 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 29
+Value = Sacrifice a few years of partying for decades of freedom.🤘😎 @ Chittorgarh Fort https://t.co/jeJ5Qk7fMj
+
+####################
+Produced Tweet
+@MD NAYAZ ALAM:Women's Denim #jeans
+
+Fabric: Denim
+
+Waist Size: 28 in, 30 in, 32 in, 34 in
+
+Length: Up to 38 in
+
+Type: Stitched
+
+D… https://t.co/qcizx8Ze1i
+
+Tweet with offset 31 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 31
+Value = Women's Denim #jeans
+
+Fabric: Denim
+
+Waist Size: 28 in, 30 in, 32 in, 34 in
+
+Length: Up to 38 in
+
+Type: Stitched
+
+D… https://t.co/qcizx8Ze1i
+
+####################
+Produced Tweet
+@Shahrul Anaz:@zheng014 still in Yangon?
+
+Tweet with offset 37 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 37
+Value = @zheng014 still in Yangon?
+
+####################
+Produced Tweet
+@Trendsmap Chennai:#isaipuyal is now trending in #Chennai
+
+https://t.co/TcUflryKeF https://t.co/YwFRiq6sCs
+
+Tweet with offset 30 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 30
+Value = #isaipuyal is now trending in #Chennai
+
+https://t.co/TcUflryKeF https://t.co/YwFRiq6sCs
+
+####################
+Produced Tweet
+@Avinash:@Livpurewater . I informed him that i am out of station come after 4 days then he asked me about happy code. I said… https://t.co/LTzCEJ06ck
+
+Tweet with offset 31 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 31
+Value = @Livpurewater . I informed him that i am out of station come after 4 days then he asked me about happy code. I said… https://t.co/LTzCEJ06ck
+
+####################
+Produced Tweet
+@Ranker's Academy.:The 21st Century skill set is not about perfectionism! It is about the mindset which concentrates on improving cont… https://t.co/lcOFSsUdyM
+
+Tweet with offset 32 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 32
+Value = The 21st Century skill set is not about perfectionism! It is about the mindset which concentrates on improving cont… https://t.co/lcOFSsUdyM
+
+####################
+Produced Tweet
+@Pankaj:i have purchase 4 mosquito killer 2 black colour is in good condition but 2 white inside fan is not working so 2 re… https://t.co/7BbE3QAvKq
+
+Tweet with offset 38 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 38
+Value = i have purchase 4 mosquito killer 2 black colour is in good condition but 2 white inside fan is not working so 2 re… https://t.co/7BbE3QAvKq
+
+####################
+Produced Tweet
+@Dr. Rajeev Bukralia:The Death of Big Data and the Emergence of the Multi-Cloud Era https://t.co/VysRFD3TFs #BigData #DataScience #Cloud
+
+Tweet with offset 33 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 33
+Value = The Death of Big Data and the Emergence of the Multi-Cloud Era https://t.co/VysRFD3TFs #BigData #DataScience #Cloud
+
+####################
+Produced Tweet
+@PropertyWala.com:Space Vision Green Acres #AgriculturalPlot #Land #ForSale #Shadnagar #Hyderabad #Commercial #Property
+https://t.co/Ov9pBcjJUv
+
+Tweet with offset 34 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 34
+Value = Space Vision Green Acres #AgriculturalPlot #Land #ForSale #Shadnagar #Hyderabad #Commercial #Property
+https://t.co/Ov9pBcjJUv
+
+####################
+Produced Tweet
+@Afsaane Nigaar:Have been struggling with high heart beat, every minute of the day. Recent losses in immediate circle has created a… https://t.co/aNPYmxBYRz
+
+Tweet with offset 35 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 35
+Value = Have been struggling with high heart beat, every minute of the day. Recent losses in immediate circle has created a… https://t.co/aNPYmxBYRz
+
+####################
+Produced Tweet
+@ASHWANI MAHAJAN:Kudos @nsitharaman The Competition Commission of India (CCI) needs to conduct a survey or an investigation to asses… https://t.co/9SjCS9InXs
+
+Tweet with offset 39 has been written to topic twitterStream
+
+##################
+
+Consumed Tweet Offset = 39
+Value = Kudos @nsitharaman The Competition Commission of India (CCI) needs to conduct a survey or an investigation to asses… https://t.co/9SjCS9InXs
+Produced and Consumed 10 tweets
+

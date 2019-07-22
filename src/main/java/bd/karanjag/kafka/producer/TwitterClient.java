@@ -27,7 +27,7 @@ import twitter4j.Status;
 import twitter4j.TwitterException;
 import twitter4j.TwitterObjectFactory;
 
-public class TwitterClient {
+public class TwitterClient implements Runnable{
 	
 	private Client client;
 	private BlockingQueue<String> queue;
@@ -81,16 +81,20 @@ public class TwitterClient {
 	public void run() {
 		client.connect();
 		try(Producer<Long,String> prod = getproducer()){
+			int i=0;
 			while(true) {
 				String msg = queue.take();
 				Status status = TwitterObjectFactory.createStatus(msg); //Using Twitter4J to parse the JSON string into a POJO
 				if(status.isRetweet())
 					System.out.println("Detected Retweet Tweet ID: "+status.getId());
-				System.out.println("@"+status.getUser().getName()+ ":"+status.getText()+"\n####################\n");
+				System.out.println("\n####################\nProduced Tweet\n"+"@"+status.getUser().getName()+ ":"+status.getText());
 				long key = status.getId();
 				//String msg = (String) TwitterObjectFactory.getRawJSON(status);
 				ProducerRecord<Long, String> record = new ProducerRecord<Long, String>(KafkaConfiguration.TOPIC,key, msg);
-				prod.send(record,callback);		
+				prod.send(record,callback);	
+				i++;
+				if(i>10)
+					break;
 			}
 		}
 		catch(InterruptedException e) {
