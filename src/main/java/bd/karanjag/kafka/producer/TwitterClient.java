@@ -82,12 +82,13 @@ public class TwitterClient {
 		client.connect();
 		try(Producer<Long,String> prod = getproducer()){
 			while(true) {
-				Status status = TwitterObjectFactory.createStatus(queue.take()); //Using Twitter4J to parse the JSON string into a POJO
+				String msg = queue.take();
+				Status status = TwitterObjectFactory.createStatus(msg); //Using Twitter4J to parse the JSON string into a POJO
 				if(status.isRetweet())
 					System.out.println("Detected Retweet Tweet ID: "+status.getId());
 				System.out.println("@"+status.getUser().getName()+ ":"+status.getText()+"\n####################\n");
 				long key = status.getId();
-				String msg = status.toString();
+				//String msg = (String) TwitterObjectFactory.getRawJSON(status);
 				ProducerRecord<Long, String> record = new ProducerRecord<Long, String>(KafkaConfiguration.TOPIC,key, msg);
 				prod.send(record,callback);		
 			}

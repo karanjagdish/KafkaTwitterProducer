@@ -1,5 +1,6 @@
 package bd.karanjag.kafka.kafka_twitter_producer;
 
+import bd.karanjag.kafka.consumer.KafkaTwitterConsumer;
 import bd.karanjag.kafka.producer.TwitterClient;
 
 /**
@@ -11,7 +12,9 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
-        TwitterClient client = new TwitterClient();
-        client.run();
+        //TwitterClient client = new TwitterClient();
+        //client.run();
+        KafkaTwitterConsumer consumer = new KafkaTwitterConsumer();
+        consumer.run();
     }
 }
